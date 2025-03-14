@@ -1,6 +1,11 @@
 ### Check the version of the default C++ standard
 
-$()$(
-  sh
-  g++ -dM -E -x c++ /dev/null | grep -F __cplusplus
-)$()
+```
+g++ -dM -E -x c++ /dev/null | grep -F __cplusplus
+```
+
+### Modify the standard that is being used
+
+```
+g++ -std=c++23
+```
